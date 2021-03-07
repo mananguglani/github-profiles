@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #48489b;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #48489b 74%);
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+header h1 {
+    color: rgb(211, 195, 195);
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.search {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: 2px solid #2a2a72;
+    outline: none;
+    background-color: #dcdef1;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #2a2a72;
+}
+
+.search::placeholder {
+    color: #030329;
+    font-size: 0.9rem;
+}
+
+.card {
+    background-color: #d17bb7;
+    background-image: linear-gradient(326deg, #a4508b 0%, #d17bb7 74%);
+    display: flex;
+    padding: 3rem;
+    border-radius: 20px;
+    margin: 2rem auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: fit-content;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #2a2a72;
+}
+
+.user-info {
+    margin-left: 2rem;
+    color: #eee;
+}
+
+.user-info h2 {
+    margin-top: 0;
+    color: rgb(46, 44, 44);
+}
+
+.user-info p {
+    color: rgb(54, 12, 97);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+    list-style-type: none;
+}
+
+.info li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info li strong {
+    font-size: 0.9rem;
+    margin-left: 0.3rem;
+    margin-right: 2rem;
+}
+
+.repo {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-family: inherit;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: blue;
+    background-color: #ddd;
+    border-radius: 3px;
+}
+
+.repo:hover {
+    background-color: #fff;
+}
